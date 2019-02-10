@@ -49,6 +49,6 @@ def get_average_age_for_season(data, season)
   sum = 0 
   
   age_sum = data[season].collect{|contestant_info| sum+= contestant_info["age"].to_i}.last 
-  return (age_sum / num_contestants).round(1)
+  return (age_sum / num_contestants).round
   
 end
